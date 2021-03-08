@@ -5,7 +5,8 @@ In this course we will convert the client side web application previously made W
 ## Live Demo
 https://kilroy763.github.io/progressive-web-apps-2021/
 
-
+## Plan Van Aanpak
+Voor Web App From Scratch heb ik een breaking bad/better call saul website gemaakt. Op de website zie je als overzichtspagina de beiden serie's hun seizoenen. Je kan filteren tussen de specifieke series. Ook kan je op een seizoen klikken om de afleveringen te zien. Ik ga hiervoor eerst de routes aanpassen met Express.
 
 ## Learning goals
 - _You understand the difference between client side and server side rendering and you can apply server side rendering
