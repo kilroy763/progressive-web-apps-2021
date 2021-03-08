@@ -5,6 +5,7 @@ const saul = "tv/60059"; //code voor better call saul
 const season = "/season/"; // code voor seizoen 
 const urlBrBa = `${cors}${brba}?api_key=${key}`; //samenvoegen van de link en key
 const urlSaul = `${cors}${saul}?api_key=${key}`; //samenvoegen van de link en key
+const fetch = require("node-fetch");
 let dataResponse = {};
 
 // Data fetchen van beide series
