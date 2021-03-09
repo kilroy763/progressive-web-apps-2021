@@ -1,9 +1,11 @@
 // Importeren van de benodige stukken code
-import {fetchDataSeason, fetchDataSeasonSaul} from './fetcher.js'
-import {renderSeason, renderSeasonSaul} from './render.js'
+const fetchert = require('./fetcher.js')
+// import {fetchDataSeason, fetchDataSeasonSaul} from './fetcher.js'
+const rendert = require('./render.js')
+// import {renderSeason, renderSeasonSaul} from './render.js'
 
 // Door middel van Routie subpagina´s maken
-export function router() {
+module.exports = function router() {
     const breakingbad = document.getElementById('breakingbad');
     const bettercallsaul = document.getElementById('bettercallsaul')
     const breakingbadtekst = document.getElementById('breakingbadTekst')
@@ -59,8 +61,8 @@ export function router() {
             breakingbad.classList.toggle("show");
             bettercallsaul.classList.remove('show');
             seasons.classList.add('show');
-            const dataSeasons = await fetchDataSeason(id)
-            renderSeason(dataSeasons)
+            const dataSeasons = await fetchert.fetchDataSeason(id)
+            rendert.renderSeason(dataSeasons)
             document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
         },
         'bettercallsaul/season/:id': async function (id) {
@@ -68,8 +70,8 @@ export function router() {
             breakingbad.classList.remove("show");
             bettercallsaul.classList.remove('show');
             seasons.classList.add('show');
-            const dataSeasonsSaul = await fetchDataSeasonSaul(id)
-            renderSeasonSaul(dataSeasonsSaul)
+            const dataSeasonsSaul = await fetchert.fetchDataSeasonSaul(id)
+            rendert.renderSeasonSaul(dataSeasonsSaul)
             document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp1930554.jpg)";
         }
     })

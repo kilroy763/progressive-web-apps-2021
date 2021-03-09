@@ -9,14 +9,14 @@ const fetch = require("node-fetch");
 let dataResponse = {};
 
 // Data fetchen van beide series
-export async function fetchData(saul) {
+async function fetchData(saul) {
     saul ? dataResponse = await fetch(urlSaul) : dataResponse = await fetch(urlBrBa)
     const data = dataResponse.json()
     return data
 };
 
 // Data fetchen van breaking bad seizoenen
-export async function fetchDataSeason(id) {
+async function fetchDataSeason(id) {
     let urlSeason = `${cors}${brba}${season}${id}?api_key=${key}`; //samenvoegen van de link en key
     const dataResponse = await fetch(urlSeason)
     const data = dataResponse.json()
@@ -24,10 +24,11 @@ export async function fetchDataSeason(id) {
 };
 
 // Data fetchen van de better call saul seizoenen
-export async function fetchDataSeasonSaul(id) {
+async function fetchDataSeasonSaul(id) {
     let urlSeasonSaul = `${cors}${saul}${season}${id}?api_key=${key}`; //samenvoegen van de link en key
     const dataResponse = await fetch(urlSeasonSaul)
     const data = dataResponse.json()
     return data
 };
 
+module.exports = {fetchData}

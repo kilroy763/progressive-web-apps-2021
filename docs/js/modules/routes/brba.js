@@ -2,7 +2,7 @@
  const img = "https://image.tmdb.org/t/p/w500";
 
  //Renderen van de seizoen posters
- export function poster_pathBrBa(dataBrBa) {
+function poster_pathBrBa(dataBrBa) {
      const info = document.getElementById('infoBrba')
      dataBrBa.seasons.shift()
      const posters = dataBrBa.seasons
@@ -17,7 +17,7 @@
  };
 
  //Renderen van de seizoen namen
- export function seasonNameBrBa(dataBrBa) {
+ function seasonNameBrBa(dataBrBa) {
      const info = document.getElementById('infoBrba')
      const naam = dataBrBa.seasons
      naam.forEach((poster, i) => {
@@ -28,19 +28,21 @@
  };
 
  // plot van serie oproepen
- export function overviewBrBa(dataBrBa) {
+ function overviewBrBa(dataBrBa) {
      let cont = document.getElementById('overviewBrba')
      cont.innerHTML = dataBrBa.overview
  }
 
  // cijfer van serie oproepen
- export function vote_averageBrBa(dataBrBa) {
+function vote_averageBrBa(dataBrBa) {
      let cont = document.getElementById('cijferBrba')
      cont.innerHTML = dataBrBa.vote_average
  }
 
  // titel van serie oproepen    
- export function nameBrBa(dataBrBa) {
+ function nameBrBa(dataBrBa) {
      let cont = document.getElementById('titleBrba')
      cont.innerHTML = dataBrBa.name
  }
+
+ module.exports = {poster_pathBrBa, overviewBrBa, nameBrBa, seasonNameBrBa, vote_averageBrBa}

@@ -1,9 +1,12 @@
 // Importeren van de gekozen data
-import {nameBrBa, overviewBrBa, poster_pathBrBa, seasonNameBrBa, vote_averageBrBa} from './routes/brba.js'
-import {nameSaul, overviewSaul, poster_pathSaul, seasonNameSaul, vote_averageSaul} from './routes/saul.js'
-import {air_date, nameSeasons, episodes, poster_path, overviewSeasons} from './routes/season.js'
+const breaking = require('./routes/brba.js')
+// import {nameBrBa, overviewBrBa, poster_pathBrBa, seasonNameBrBa, vote_averageBrBa} from './routes/brba.js'
+const saul = require('./routes/saul.js')
+// import {nameSaul, overviewSaul, poster_pathSaul, seasonNameSaul, vote_averageSaul} from './routes/saul.js'
+const season = require('./routes/season.js')
+// import {air_date, nameSeasons, episodes, poster_path, overviewSeasons} from './routes/season.js'
 
-export function render(dataBrBa, dataSaul) {
+module.exports =  function render(dataBrBa, dataSaul) {
     if (dataBrBa) {
         forRender(dataBrBa)
     }
@@ -12,54 +15,54 @@ export function render(dataBrBa, dataSaul) {
     }
 }
 
-export function renderSeason(dataSeason) {
+module.exports =   function renderSeason(dataSeason) {
     forRenderSeasons(dataSeason)
 }
 
-export function renderSeasonSaul(dataSeason) {
+module.exports =   function renderSeasonSaul(dataSeason) {
     forRenderSeasonsSaul(dataSeason)
 }
 
 
 
 //nodige elementen oproepen voor breaking bad
-export function forRender(putDataBrBa) {
+module.exports =   function forRender(putDataBrBa) {
     let dataBrBa = putDataBrBa;
-    nameBrBa(dataBrBa);
-    overviewBrBa(dataBrBa);
-    poster_pathBrBa(dataBrBa);
-    seasonNameBrBa(dataBrBa);
-    vote_averageBrBa(dataBrBa);
+    breaking.nameBrBa(dataBrBa);
+    breaking.overviewBrBa(dataBrBa);
+    breaking.poster_pathBrBa(dataBrBa);
+    breaking.seasonNameBrBa(dataBrBa);
+    breaking.vote_averageBrBa(dataBrBa);
 
 }
 
 //nodige elementen oproepen voor better call saul
-export function forRenderSaul(putDataSaul) {
+module.exports =   function forRenderSaul(putDataSaul) {
     let dataSaul = putDataSaul;
-    nameSaul(dataSaul);
-    overviewSaul(dataSaul);
-    poster_pathSaul(dataSaul);
-    seasonNameSaul(dataSaul);
-    vote_averageSaul(dataSaul);
+    saul.nameSaul(dataSaul);
+    saul.overviewSaul(dataSaul);
+    saul.poster_pathSaul(dataSaul);
+    saul.seasonNameSaul(dataSaul);
+    saul.vote_averageSaul(dataSaul);
 }
 
 //nodige elementen oproepen voor breaking bad seizoenen
-export function forRenderSeasons(putDataSeasons) {
+module.exports =   function forRenderSeasons(putDataSeasons) {
     let dataSeasons = putDataSeasons;
-    air_date(dataSeasons);
-    nameSeasons(dataSeasons);
-    poster_path(dataSeasons);
-    overviewSeasons(dataSeasons);
-    episodes(dataSeasons);
+    season.air_date(dataSeasons);
+    season.nameSeasons(dataSeasons);
+    season.poster_path(dataSeasons);
+    season.overviewSeasons(dataSeasons);
+    season.episodes(dataSeasons);
 }
 
 //nodige elementen oproepen voor better call saul seizoenen
-export function forRenderSeasonsSaul(putDataSeasonsSaul) {
+module.exports =  function forRenderSeasonsSaul(putDataSeasonsSaul) {
     let dataSeasons = putDataSeasonsSaul;
-    air_date(dataSeasons);
-    nameSeasons(dataSeasons);
-    poster_path(dataSeasons);
-    overviewSeasons(dataSeasons);
-    episodes(dataSeasons);
+    season.air_date(dataSeasons);
+    season.nameSeasons(dataSeasons);
+    season.poster_path(dataSeasons);
+    season.overviewSeasons(dataSeasons);
+    season.episodes(dataSeasons);
 }
 

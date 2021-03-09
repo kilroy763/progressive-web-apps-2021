@@ -3,7 +3,7 @@ const img = "https://image.tmdb.org/t/p/w500";
 
 
 //Renderen van de seizoen posters
-export function poster_pathSaul(dataSaul) {
+function poster_pathSaul(dataSaul) {
     const info = document.getElementById('infoSaul')
     dataSaul.seasons.shift()
     const posters = dataSaul.seasons
@@ -18,7 +18,7 @@ export function poster_pathSaul(dataSaul) {
 };
 
 //Renderen van de seizoen namen
-export function seasonNameSaul(dataSaul) {
+function seasonNameSaul(dataSaul) {
     const info = document.getElementById('infoSaul')
     const naam = dataSaul.seasons
     naam.forEach((poster, i) => {
@@ -29,19 +29,21 @@ export function seasonNameSaul(dataSaul) {
 };
 
 // plot van serie oproepen
-export function overviewSaul(dataSaul) {
+function overviewSaul(dataSaul) {
     let cont = document.getElementById('overviewSaul')
     cont.innerHTML = dataSaul.overview
 }
 
 // cijfer van serie oproepen
-export function vote_averageSaul(dataSaul) {
+function vote_averageSaul(dataSaul) {
     let cont = document.getElementById('cijferSaul')
     cont.innerHTML = dataSaul.vote_average
 }
 
 // titel van serie oproepen
-export function nameSaul(dataSaul) {
+function nameSaul(dataSaul) {
     let cont = document.getElementById('titleSaul')
     cont.innerHTML = dataSaul.name
 }
+
+module.exports = {nameSaul, overviewSaul, poster_pathSaul, seasonNameSaul, vote_averageSaul}
