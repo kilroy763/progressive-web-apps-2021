@@ -2,6 +2,9 @@
 
 In this course we will convert the client side web application previously made Web App From Scratch into a server side rendered application. We also add functionalities based on the Service Worker and turn the application into a Progressive Web App. Ultimately we are going to implement a series of optimisations to improve the performance of the application.  
 
+## Belangrijk!
+Het project is te vinden in de "dit is het project" folder. Opschoning wordt nog gedaan
+
 ## Live Demo
 https://kilroy763.github.io/progressive-web-apps-2021/
 
