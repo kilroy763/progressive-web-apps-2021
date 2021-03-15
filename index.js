@@ -3,7 +3,7 @@ const express = require('express');
 const request = require('request');
 var path = require('path')
 const fetch = require('node-fetch')
-const home = require('./modules/render.js')
+let home = require('./modules/render.js')
 
 // Config object
 const port = 3000;
@@ -49,7 +49,6 @@ app.get('/season/:season_number', async(req, res) =>{
     )
 })
 
-app.get('/', home);
 
 
 
