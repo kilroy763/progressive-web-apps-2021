@@ -1,0 +1,21 @@
+<%- include ./partials/head.ejs %>
+
+<h1><%- data.name%></h1>
+
+
+<p><%- data.overview %></p>
+
+<section>
+
+<% data.seasons.shift() %>
+        <% data.seasons.forEach(poster => { -%>
+    <article>
+    <img src="https://image.tmdb.org/t/p/w500<%- poster.poster_path %>" alt="">
+    <a href="/season/<%- poster.season_number %>"><%- poster.name %></a>
+</article>
+<% }); %>
+</section>
+
+
+
+<%- include ./partials/footer.ejs %>

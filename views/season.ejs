@@ -5,7 +5,37 @@
 
 <h2>SEASON: <%- data.season_number %></h2>
 <p><%- data.overview %></p>
-<img src="https://image.tmdb.org/t/p/w500<%- data.poster_path %>" alt="">
+<img src="https://image.tmdb.org/t/p/w500<%- data.poster_path %>" alt="" class="poster">
+
+<% data.episodes.forEach(episode => { %>
+
+    <table>
+        <tr>
+            <td>
+                <img src="https://image.tmdb.org/t/p/w500<%- episode.still_path %>" alt="" class="episode">
+            </td>
+            <td>
+                <a href="/season/<%- episode.season_number %>/episode/<%- episode.episode_number %>" class="titel"><%- episode.name %></a>
+            </td>
+            <td>
+                <p><%- episode.vote_average %></p>
+            </td>
+            <td>
+                <p><%- episode.overview %></p>
+            </td>
+            <td>
+                <p><%- episode.episode_number %></p>
+            </td>
+        </tr>
+    </table>
+<article>
+   
+   
+</article>
+<% }); %>
+
+
+
 
 
 <%- include ./partials/footer.ejs %>

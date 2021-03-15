@@ -16,19 +16,50 @@ body {
     background-size: cover;
     backdrop-filter: blur(5px);
     height: 120vh;
-    background-color: #f3f3f3;
+    background-color: grey;
 }
 
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de posters */
 img {
-    width: 15%;
-    margin-left: 4%;
-    margin-top: 4em;
-    display: block;
+    width: 75%;
     margin: 0 auto;
 }
 
+.poster{
+    width: 20%;
+}
+
+.episode{
+    width: 20em;
+}
+
+table{
+    width: 100vw;
+}
+
+td p {
+    min-width: 0;
+    max-width: 20em;
+    width: 100%;
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article a {
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+}
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de begin tekst */
 p {
@@ -48,14 +79,10 @@ h1 {
 }
 
 a {
-    margin: 0 auto;
-    display: inline-block;
-    width: 15%;
-    margin-left: 4%;
+
     font-weight: 800;
     margin-bottom: 1em;
     font-size: 1.5em;
-    text-align: center;
 }
 
 h2 {

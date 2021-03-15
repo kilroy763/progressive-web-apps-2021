@@ -3,6 +3,7 @@ const express = require('express');
 const request = require('request');
 var path = require('path')
 const fetch = require('node-fetch')
+const home = require('./modules/render.js')
 
 // Config object
 const port = 3000;
@@ -28,12 +29,12 @@ app.get('/', async(req, res) =>{
     const fetch_response = await fetch(api_url);
     const json = await fetch_response.json();
     console.log(json)
-    res.render('test', {
+    res.render('index', {
         data: json
     }
-
     )
 })
+
 
 
 app.get('/season/:season_number', async(req, res) =>{
@@ -45,9 +46,10 @@ app.get('/season/:season_number', async(req, res) =>{
     res.render('season', {
         data: json
     }
-
     )
 })
+
+app.get('/', home);
 
 
 
