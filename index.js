@@ -5,7 +5,7 @@ var path = require('path')
 const fetch = require('node-fetch')
 
 // Config object
-
+const port = 3000;
 
 // Create new express app in 'app'
 const app = express();
@@ -52,7 +52,7 @@ app.get('/season/:season_number', async(req, res) =>{
 
 
 // Actually set up the server
-app.listen(config.port, function() {
-	console.log(`Application started on port: ${config.port}`);
+app.listen(process.env.PORT || port, function() {
+	console.log(`Application started on port: ${port}`);
 });
 
