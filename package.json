@@ -1,36 +1,26 @@
 {
-  "name": "progressive-web-apps-2021",
+  "name": "PWA",
   "version": "1.0.0",
-  "description": "In this course we will convert the client side web application previously made Web App From Scratch into a server side rendered application. We also add functionalities based on the Service Worker and turn the application into a Progressive Web App. Ultimately we are going to implement a series of optimisations to improve the performance of the application.",
+  "description": "WAFS to PWA",
   "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "example": "examples"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html",
-    "build": "browserify docs/js/main.js -o bundle.js",
-    "start": "node docs/js/main.js",
-    "node": " node docs/js/app.js",
-    "werkt": "node bundle.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kilroy763/progressive-web-apps-2021.git"
-  },
-  "author": "",
+  "author": "Max Mulder",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kilroy763/progressive-web-apps-2021/issues"
-  },
-  "homepage": "https://github.com/kilroy763/progressive-web-apps-2021#readme",
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "browserfy": "^1.0.0",
     "browserify": "^17.0.0",
-    "express": "^4.17.1",
-    "jsdom": "^16.5.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
     "node-fetch": "^2.6.1",
-    "nvm": "^0.0.4",
-    "rollup": "^2.40.0"
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
   }
 }
