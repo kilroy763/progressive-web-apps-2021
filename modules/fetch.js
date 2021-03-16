@@ -1,6 +1,3 @@
-const express = require('express');
-const request = require('request');
-var path = require('path')
 const fetch = require('node-fetch')
 
 const cors = 'https://api.themoviedb.org/3/'; //algemene link van de API
@@ -14,16 +11,12 @@ const urlSaul = `${cors}${saul}?api_key=${key}`; //samenvoegen van de link en ke
 async function fetchDataBrBa(brba) {
     const fetch_response = await fetch(urlBrBa);
     const json = await fetch_response.json();
-    console.log(json)
-    console.log(urlBrBa)
     return json
 };
 
 async function fetchDataSaul(saul) {
     const fetch_response = await fetch(urlSaul);
     const json = await fetch_response.json();
-    console.log(json)
-    console.log(urlSaul)
     return json
 };
 

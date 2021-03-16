@@ -39,6 +39,7 @@ app.get('/bettercallsaul/season/:season_number', render.seasonSaul)
 
 // Actually set up the server
 app.listen(process.env.PORT || port, function() {
-	console.log(`Application started on port: ${port}`);
+    console.log(`Application started on port: ${port}`);
+    console.log(`Application is visible on: http://localhost:${port}`);
 });
 
