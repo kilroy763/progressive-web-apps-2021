@@ -68,8 +68,12 @@ article {
 article a {
     margin: 0 auto;
     text-align: center;
-    color: black;
+    color: white;
     text-decoration: none;
+}
+
+td > a {
+    color: black;
 }
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Algemene styling*/
 * {
