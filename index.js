@@ -3,7 +3,8 @@ const express = require('express');
 const request = require('request');
 var path = require('path')
 const fetch = require('node-fetch')
-let home = require('./modules/render.js')
+const render = require('./modules/render.js')
+
 
 // Config object
 const port = 3000;
@@ -28,27 +29,6 @@ function redirect(req, res) {
     res.redirect('/breakingbad');
 }
 
-app.get('/breakingbad', async(req, res) =>{
-    const api_url = 'https://api.themoviedb.org/3/tv/1396?api_key=ae3a232f0096c607ad590f0ec850e635';
-    const fetch_response = await fetch(api_url);
-    const json = await fetch_response.json();
-    console.log(json)
-    res.render('index', {
-        data: json
-    }
-    )
-})
-
-app.get('/bettercallsaul', async(req, res) =>{
-    const api_url = 'https://api.themoviedb.org/3/tv/60059?api_key=ae3a232f0096c607ad590f0ec850e635';
-    const fetch_response = await fetch(api_url);
-    const json = await fetch_response.json();
-    console.log(json)
-    res.render('index', {
-        data: json
-    }
-    )
-})
 
 
 app.get('/season/:season_number', async(req, res) =>{
@@ -63,7 +43,8 @@ app.get('/season/:season_number', async(req, res) =>{
     )
 })
 
-// app.get('/', home);
+app.get('/breakingbad', render.BrBa);
+app.get('/bettercallsaul', render.Saul);
 
 
 

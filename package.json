@@ -7,17 +7,18 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
   "author": "Max Mulder",
   "license": "ISC",
   "dependencies": {
     "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
+    "babel-cli": "^6.18.0",
     "browserfy": "^1.0.0",
     "browserify": "^17.0.0",
+    "dotenv": "^8.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "gulp": "^4.0.2",
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.7",
     "path": "^0.12.7",
