@@ -11,11 +11,10 @@
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Achtergrond styling */
 body {
 
-    background-image: url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg);
+    background-image: url(https://github.com/kilroy763/progressive-web-apps-2021/blob/master/public/img/background.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: blur(5px);
     height: 120vh;
     background-color: white;
 }
