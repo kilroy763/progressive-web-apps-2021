@@ -27,5 +27,14 @@ async function fetchDataSaul(saul) {
     return json
 };
 
+async function fetchDataSeasonSaul(urlSeason) {
+    const fetch_response = await fetch(urlSeason);
+    const json = await fetch_response.json();
+    console.log(json)
+    console.log(urlSeason)
+    return json
+};
 
-module.exports = {fetchDataBrBa, fetchDataSaul}
+
+
+module.exports = {fetchDataBrBa, fetchDataSaul, fetchDataSeasonSaul}

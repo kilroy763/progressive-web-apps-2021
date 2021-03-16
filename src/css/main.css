@@ -1,36 +1,3 @@
-
-.episode{
-    width: 20em;
-}
-
-table{
-    width: 100vw;
-}
-
-td p {
-    min-width: 0;
-    max-width: 20em;
-    width: 100%;
-}
-
-section {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-}
-article {
-    display: flex;
-    flex-direction: column;
-}
-
-article a {
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Algemene styling*/
 * {
     margin: 0;
@@ -83,25 +50,3 @@ h2 {
     text-align: center;
 }
 
-
-#nav{
-    font-size: 1.5em;
-}
-
-a{
-    text-decoration: none;
-}
-
-#breakingbadNav{
-    margin-right: 150px;
-}
-
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de posters */
-img {
-    width: 75%;
-    margin: 0 auto;
-}
-
-.poster{
-    width: 20%;
-}

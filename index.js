@@ -30,22 +30,11 @@ function redirect(req, res) {
 }
 
 
-
-app.get('/season/:season_number', async(req, res) =>{
-    const api_url = `https://api.themoviedb.org/3/tv/1396/season/${req.params.season_number}?api_key=ae3a232f0096c607ad590f0ec850e635`;
-    const fetch_response = await fetch(api_url);
-    const json = await fetch_response.json();
-    console.log(json)
-    console.log(api_url)
-    res.render('season', {
-        data: json
-    }
-    )
-})
-
 app.get('/breakingbad', render.BrBa);
-app.get('/bettercallsaul', render.Saul);
+app.get('/breakingbad/season/:season_number', render.seasonBrBa)
 
+app.get('/bettercallsaul', render.Saul);
+app.get('/bettercallsaul/season/:season_number', render.seasonSaul)
 
 
 // Actually set up the server

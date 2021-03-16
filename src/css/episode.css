@@ -1,0 +1,32 @@
+
+.episode{
+    width: 20em;
+}
+
+table{
+    width: 100vw;
+}
+
+td p {
+    min-width: 0;
+    max-width: 20em;
+    width: 100%;
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article a {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

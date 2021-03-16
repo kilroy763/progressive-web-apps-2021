@@ -1,0 +1,10 @@
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de posters */
+img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.poster{
+    width: 20%;
+}
