@@ -12,7 +12,7 @@
 <% data.seasons.shift() %>
         <% data.seasons.forEach(poster => { -%>
     <article>
-        <a href="bettercallsaul/season/<%- poster.season_number %>"></a>
+        <a href="bettercallsaul/season/<%- poster.season_number %>">
     <img src="https://image.tmdb.org/t/p/w500<%- poster.poster_path %>" alt=""  class="indexposter">
     <%- poster.name %></a>
 </article>
