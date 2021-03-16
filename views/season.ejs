@@ -4,17 +4,18 @@
 <h1></h1>
 
 
-<h2>SEASON: <%- data.season_number %></h2>
-<p><%- data.overview %></p>
+<h2>Season: <%- data.season_number %></h2>
 <img src="https://image.tmdb.org/t/p/w500<%- data.poster_path %>" alt="" class="poster">
+<p><%- data.overview %></p>
+
 
 <% data.episodes.forEach(episode => { %>
 
     <table>
         <tr>
-            <td>
+            <th>
                 <img src="https://image.tmdb.org/t/p/w500<%- episode.still_path %>" alt="" class="episode">
-            </td>
+            </th>
         </tr>
         <tr>
             <td>
@@ -23,17 +24,20 @@
         </tr>
         <tr>
             <td>
-                <p>Cijfer: <%- episode.vote_average %></p>
-            </td>
-            <td>
-                <p>Aflevering: <%- episode.episode_number %></p>
+                <p><%- episode.overview %></p>
             </td>
         </tr>
         <tr>
             <td>
-                <p><%- episode.overview %></p>
+                <p>Cijfer: <%- episode.vote_average %></p>
             </td>
         </tr>
+        <tr>
+            <td>
+                <p>Aflevering: <%- episode.episode_number %></p>
+            </td>
+        </tr>
+
     
     </table>
 <article>

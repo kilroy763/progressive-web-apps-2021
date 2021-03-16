@@ -8,9 +8,14 @@
 .titel{
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 
 table{
+    width: 100vw;
+}
+
+tr {
     width: 100vw;
 }
 
