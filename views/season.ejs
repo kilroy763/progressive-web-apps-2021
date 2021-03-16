@@ -15,19 +15,26 @@
             <td>
                 <img src="https://image.tmdb.org/t/p/w500<%- episode.still_path %>" alt="" class="episode">
             </td>
+        </tr>
+        <tr>
             <td>
                 <a href="/season/<%- episode.season_number %>/episode/<%- episode.episode_number %>" class="titel"><%- episode.name %></a>
             </td>
+        </tr>
+        <tr>
             <td>
-                <p><%- episode.vote_average %></p>
+                <p>Cijfer: <%- episode.vote_average %></p>
             </td>
+            <td>
+                <p>Aflevering: <%- episode.episode_number %></p>
+            </td>
+        </tr>
+        <tr>
             <td>
                 <p><%- episode.overview %></p>
             </td>
-            <td>
-                <p><%- episode.episode_number %></p>
-            </td>
         </tr>
+    
     </table>
 <article>
    

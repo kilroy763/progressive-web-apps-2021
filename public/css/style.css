@@ -1,9 +1,15 @@
 
 .episode{
     width: 20em;
+    margin: 0 auto;
+    display: block;
 }
 
 table{
+    width: 100vw;
+}
+
+td{
     width: 100vw;
 }
 
@@ -89,7 +95,7 @@ h2 {
     margin-top: 2em;
 }
 
-img:hover {
+.indexposter:hover {
     transform: scale(1.2);
     transition: all .2s ease
 }

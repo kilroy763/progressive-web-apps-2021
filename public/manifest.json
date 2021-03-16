@@ -1,6 +1,7 @@
 {
     "short_name": "Breaking Bad",
     "name": "Breaking Bad overzichtspagina",
+    "description": "Breaking bad overzichtspagina",
     "icons": [
         {
             "src": "/img/brbalogo.png",
@@ -9,6 +10,7 @@
         }
     ],
     "start_url": "/",
+    "display_override": ["window-control-overlay", "minimal-ui"],
     "background_color": "#026635",
     "display": "standalone",
     "scope": "/",

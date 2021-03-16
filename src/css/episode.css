@@ -1,9 +1,20 @@
 
 .episode{
     width: 20em;
+    margin: 0 auto;
+    display: block;
+}
+
+.titel{
+    display: block;
+    margin: 0 auto;
 }
 
 table{
+    width: 100vw;
+}
+
+td{
     width: 100vw;
 }
 
