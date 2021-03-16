@@ -1,4 +1,3 @@
-
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de posters */
 img {
     width: 75%;
@@ -7,4 +6,8 @@ img {
 
 .poster{
     width: 20%;
+    display: block;
+    padding: 1em;
+    margin: 0 auto;
+
 }
