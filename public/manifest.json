@@ -1,0 +1,18 @@
+{
+    "short_name": "Breaking Bad",
+    "name": "Breaking Bad overzichtspagina",
+    "icons": [
+        {
+            "src": "/img/brbalogo.png",
+            "type": "image/png",
+            "sizes": "900x900"
+        }
+    ],
+    "start_url": "",
+    "background_color": "#026635",
+    "display": "standalone",
+    "theme_color": "#026635"
+}
+
+
+// https://hackthestuff.com/article/what-is-manifest-json-file-and-how-it-is-useful#:~:text=The%20manifest.,Add%20to%20Home%20Screen%20prompt.

@@ -22,9 +22,13 @@ app.set('views', 'views');
 // Sending something (responding) ends the response cycle
 app.use(express.static(path.join(__dirname, '/public')));
 
+app.get('/', redirect)
 
+function redirect(req, res) {
+    res.redirect('/breakingbad');
+}
 
-app.get('/', async(req, res) =>{
+app.get('/breakingbad', async(req, res) =>{
     const api_url = 'https://api.themoviedb.org/3/tv/1396?api_key=ae3a232f0096c607ad590f0ec850e635';
     const fetch_response = await fetch(api_url);
     const json = await fetch_response.json();
@@ -35,6 +39,16 @@ app.get('/', async(req, res) =>{
     )
 })
 
+app.get('/bettercallsaul', async(req, res) =>{
+    const api_url = 'https://api.themoviedb.org/3/tv/60059?api_key=ae3a232f0096c607ad590f0ec850e635';
+    const fetch_response = await fetch(api_url);
+    const json = await fetch_response.json();
+    console.log(json)
+    res.render('index', {
+        data: json
+    }
+    )
+})
 
 
 app.get('/season/:season_number', async(req, res) =>{
@@ -49,6 +63,7 @@ app.get('/season/:season_number', async(req, res) =>{
     )
 })
 
+// app.get('/', home);
 
 
 
