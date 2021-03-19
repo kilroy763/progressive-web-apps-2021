@@ -15,4 +15,5 @@ Dinsdag heb ik de noob sessie gejoined van Joost. Hierdoor kreeg ik een goede ba
 
 
 ## Toelichting week 2
-Na de feedback sessie van vorige week vrijdag wist ik waar iedereen in de groep stond. Hierdoor wist ik dat ik erg achterliep. Hierdoor heb ik op de maandag snel stappen gezet met mijn code. Ik heb de detailpagina volledig uitgewerkt en de home pagina ook, ik had wat problemen met de modules opmaken alleen dat is uiteindelijk gelukt. Hierdoor kon ik de dinsdag snel aan de slag aan de opdracht van de week
+Na de feedback sessie van vorige week vrijdag wist ik waar iedereen in de groep stond. Hierdoor wist ik dat ik erg achterliep. Hierdoor heb ik op de maandag snel stappen gezet met mijn code. Ik heb de detailpagina volledig uitgewerkt en de home pagina ook, ik had wat problemen met de modules opmaken alleen dat is uiteindelijk gelukt. Hierdoor kon ik de dinsdag snel aan de slag aan de opdracht van de week.
+Dinsdag heb ik een begin gemaakt aan build scripts aan de hand van een noobs sessie met Wouter. Ook heb ik wat CSS uit mijn WAFS project toegevoegd. Tot slot had ik nog een manifest.json toegevoegd die werkt en een stukje basis code van de serviceworker.js. De service worker moet ik volgende week alleen nog correct uitwerken.
