@@ -3,7 +3,7 @@
 
 async function BrBa(req,res) {
     const data = await fetcher.fetchDataBrBa()
-    res.render('index', {data:data});
+    res.render('breakingbad', {data:data});
  }
 
  async function Saul(req,res) {
