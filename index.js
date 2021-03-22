@@ -36,6 +36,12 @@ app.get('/breakingbad/season/:season_number', render.seasonBrBa)
 app.get('/bettercallsaul', render.Saul);
 app.get('/bettercallsaul/season/:season_number', render.seasonSaul)
 
+app.get('/offline', function(req, res) {
+	// Send a plain string using res.send();
+	res.render('offline', {
+	})
+});
+
 app.get('*', function(req, res) {
 	// Send a plain string using res.send();
 	res.render('notfound', {
@@ -43,11 +49,7 @@ app.get('*', function(req, res) {
 });
 
 
-app.get('/offline', function(req, res) {
-	// Send a plain string using res.send();
-	res.render('offline', {
-	})
-});
+
 
 
 // Actually set up the server

@@ -10,7 +10,7 @@
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Achtergrond styling */
 body {
 
-    background-image: url(https://github.com/kilroy763/progressive-web-apps-2021/blob/master/public/img/background.jpg?raw=true);
+    background-image: url("../img/background.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
