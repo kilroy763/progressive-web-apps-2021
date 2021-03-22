@@ -1,9 +1,9 @@
 const CORE_CACHE = 1
 const CORE_CACHE_NAME = `core-v${CORE_CACHE}`
-const CORE_ASSETS = ["manifest.json", "/offline", "css/style.css", "./index.js"] 
+const CORE_ASSETS = ["manifest.json", "/offline", "css/style.css"] 
 
 self.addEventListener('install', (event) => {
-    console.log("Installed")
+    console.log("Service worker is geinstalleerd")
     event.waitUntil(
         caches.open(CORE_CACHE_NAME)
         .then(cache => cache.addAll(CORE_ASSETS))
@@ -12,7 +12,7 @@ self.addEventListener('install', (event) => {
 })
 
 self.addEventListener("activate", (event) => {
-    console.log("Activated")
+    console.log("Server worker is Actief")
     event.waitUntil(clients.claim())
 })
 
@@ -36,22 +36,22 @@ self.addEventListener("fetch", (event) => {
     )
 
     /* Save all requests to cache */
-    // event.respondWith(
-    //     caches.open(CORE_CACHE_NAME).then(cache => {
-    //         return cache.match(event.request)
-    //             .then(response => {
-    //                 if(response) {
-    //                     return response
-    //                 }
-    //                 return fetch(event.request)
-    //                 .then(response => {
-    //                     cache.put(event.request, response.clone())
-    //                     return response
-    //                 })
-    //             }).catch((err) => {
-    //                 return caches.open(CORE_CACHE_NAME).then(cache => cache.match('/offline'))
-    //             })
-    //     })
-    // )
+//     event.respondWith(
+//         caches.open(CORE_CACHE_NAME).then(cache => {
+//             return cache.match(event.request)
+//                 .then(response => {
+//                 if(response) {
+//                         return response
+//                     }
+//                 return fetch(event.request)
+//                 .then(response => {
+//                         cache.put(event.request, response.clone())
+//                     return response
+//                 })
+//                 }).catch((err) => {
+//              return caches.open(CORE_CACHE_NAME).then(cache => cache.match('/offline'))
+//               })
+//   })
+//   )
             
 })

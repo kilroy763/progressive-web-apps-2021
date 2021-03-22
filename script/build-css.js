@@ -7,4 +7,5 @@ return gulp.src([
     "./src/css/*.css",
   ])
     .pipe(concat("style.css"))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest("public/css"))

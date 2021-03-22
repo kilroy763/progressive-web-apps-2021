@@ -1,0 +1,43 @@
+
+@media only screen and (max-width: 800px) {
+
+    section{
+        display: block;
+    }
+
+    img{
+        width: 75%;
+        min-width: 200px;
+    }
+
+    .seasonlink{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 2.5em;
+    }
+    #nav{
+        font-size: 0.75em;
+        background-color: #026635;
+        text-align: center;
+        height: 2.5em;
+        margin-bottom: 4em;
+    }
+
+    #breakingbadNav{
+        margin-right: 50px;
+    }
+
+   
+
+    table:nth-child(even){
+        width: 85%;
+        max-width: 450px;
+    }
+    
+    h1{
+        font-size: 2.5em;
+    }
+  }

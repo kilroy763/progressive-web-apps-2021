@@ -7,7 +7,6 @@
     
 }
 
-
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Achtergrond styling */
 body {
 
@@ -23,11 +22,11 @@ body {
 p {
     margin: 0 auto;
     display: block;
-    width: 40%;
-    min-width: 40em;
+    width: 80%;
+    max-width: 40em;
     text-align: center;
     font-size: 1em;
-    height: 10em;
+    margin-bottom: 2em;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de tekst */
