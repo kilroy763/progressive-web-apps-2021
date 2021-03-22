@@ -30,7 +30,9 @@
         margin-right: 50px;
     }
 
-   
+    #nav>a {
+        font-size: 19px;
+    }
 
     table:nth-child(even){
         width: 85%;
