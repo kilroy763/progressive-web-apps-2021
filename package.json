@@ -13,11 +13,6 @@
   "author": "Max Mulder",
   "license": "ISC",
   "dependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.18.0",
-    "browserfy": "^1.0.0",
-    "browserify": "^17.0.0",
-    "dotenv": "^8.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "gulp": "^4.0.2",
@@ -31,5 +26,13 @@
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kilroy763/progressive-web-apps-2021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kilroy763/progressive-web-apps-2021/issues"
+  },
+  "homepage": "https://github.com/kilroy763/progressive-web-apps-2021#readme"
 }
