@@ -5,7 +5,7 @@
 
 
 <h2>Season: <%- data.season_number %></h2>
-<img src="https://image.tmdb.org/t/p/original<%- data.poster_path %>" alt="" class="poster">
+<img src="https://image.tmdb.org/t/p/w500<%- data.poster_path %>" alt="" class="poster">
 <p><%- data.overview %></p>
 
 
@@ -14,7 +14,7 @@
     <table>
         <tr>
             <th>
-                <img src="https://image.tmdb.org/t/p/w1280<%- episode.still_path %>" alt="" class="episode">
+                <img src="https://image.tmdb.org/t/p/w780<%- episode.still_path %>" alt="" class="episode">
             </th>
         </tr>
         <tr>
@@ -24,7 +24,7 @@
         </tr>
         <tr>
             <td>
-                <p>Aflevering: <%- episode.episode_number %></p>
+                <p>Episode: <%- episode.episode_number %></p>
             </td>
         </tr>
         <tr>

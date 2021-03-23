@@ -11,11 +11,11 @@
 
 <% data.seasons.shift() %>
         <% data.seasons.forEach(poster => { -%>
-    <article>
+    <article class="placeholder">
         <a href="breakingbad/season/<%- poster.season_number %>" class="seasonlink">
     <img src="https://image.tmdb.org/t/p/w500<%- poster.poster_path %>" alt="" class="indexposter">
     <%- poster.name %></a>
-</article>
+    </article>
 <% }); %>
 </section>
 
