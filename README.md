@@ -4,6 +4,22 @@ In dit vak heb ik mijn Breaking Bad overzichtspagina van Web App From Scratch om
 ## Live Demo
 https://progressivewebappmaxmulder.herokuapp.com
 
+## Hoe installeer je het project?
+Clone de repository
+```
+  $ git clone https://github.com/kilroy763/progressive-web-apps-2021.git
+  ```
+Navigeer naar de repository
+```
+  $ cd progressive-web-apps-2021
+  $ npm install
+  ```
+
+Run het bestand
+```
+  $ npm run start
+  ```
+  
 ## Plan Van Aanpak
 Voor Web App From Scratch heb ik een breaking bad/better call saul website gemaakt. Op de website zie je als overzichtspagina de beiden serie's hun seizoenen. Je kan filteren tussen de specifieke series. Ook kan je op een seizoen klikken om de afleveringen te zien. Ik ga hiervoor eerst de routes aanpassen met Express.
 
