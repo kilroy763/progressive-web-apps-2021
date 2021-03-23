@@ -31,3 +31,11 @@ Dinsdag heb ik een semi skeleton UI gemaakt. Ook heb ik aan mijn lighthouse perf
 ## Skeleton UI
 ![Skelelton UI](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/frames.jpg?raw=true)
 
+## Overview Page
+![overview page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/overviewpc.jpg?raw=true)
+
+## 404 Page
+1[404 page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/404.jpg?raw=true)
+
+## Offline Page
+![offline page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/connectionLost.jpg?raw=true)
