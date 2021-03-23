@@ -27,9 +27,12 @@ Dinsdag heb ik een semi skeleton UI gemaakt. Ook heb ik aan mijn lighthouse perf
 
 ## Lighthouse Performance 
 ![Lighthouse performance](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/lighthouse.jpg?raw=true)
+Zoals hier boven te zien is, was mijn desktop perforamce al redelijk oke. Ik heb gekeken naar de errors die lighthouse aangaf en heb de code voor de images aangepast. Verders heb ik mijn code nog wat opgeschoond en gekeken naar de snelheden de fetches. Toen ik dit had opgelost was de desktop versie zo goed als perfect. (buiten de SEO om, hier heb ik mijn tijd niet ingestoken omdat dit niet echt een punt van performance is)
+Voor de mobiele versie verliep het niet zo gemakkelijk. Na de aanpassingen van de desktop versie, liep de mobiele versie direct ook beter. Toch kwam ik niet uit 1 foutmelding, namenlijk het volgende : Largest Contentful Paint. Die is bij mij 4.1s op de mobiele variant. Dit komt doordat mijn CSS bestand 2.7kb is volgens de console. Ik kreeg het alleen niet voor elkaar om dit beter te minifyen en heb daarom gekozen om te laten voor wat het is.
 
 ## Skeleton UI
 ![Skelelton UI](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/frames.jpg?raw=true)
+Tijdens mijn performance tests heb ik ook een netwerk test gedaan. Zo heb ik mijn pagina laten runnen op slow 3G verbinding. Hierbij kwam ik er direct achter hoe mijn pagina rendert. Eerst zag ik een wit beeld, hierna mijn achtergrond afbeelding. Hierdoor werd mijn tekst ook zichtwaar, die is namenlijk wit. Tot slot werden de gefetchde afbeeldingen getoond. Ik heb hiervoor mijn achtergrond kleur aangepast. Nu is direct mijn tekst te lezen, ook heb ik een placeholder voor de afbeeldingen gemaakt. Hierdoor is een vakje gereserveerd voor de afbeeldingen waar ze komen. Nu heb ik dan ook een render manier waarbij je eerst de tekst ziet met wat basis stijlen, dan mijn achtergrond afbeelding en tot slot de gefetchde afbeeldingen.
 
 ## Overview Page
 ![overview page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/overviewpc.jpg?raw=true)
