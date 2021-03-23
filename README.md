@@ -21,3 +21,13 @@ Dinsdag heb ik een begin gemaakt aan build scripts aan de hand van een noobs ses
 
 ## Toelichting week 3
 Ik ben de maandag verder gegaan met waar ik vorige week gebleven was. Zo heb ik de service worker uitgewerkt met een offline page. Ik had hier problemen mee door een stomme fout. Ik laad namenlijk een achtergrond in via een link en mijn tekst op de pagina is wit. Als je offline bent laad de achtergrond afbeelding niet in doordat die extern is en daardoor wordt de achtergrond wit. Doordat mijn tekst ook wit was, zag ik alleen maar wit en dacht ik dat het niet werkte. Hierdoor was ik een uur hiermee bezig voor niks. Toch heb ik het helemaal werkend gekregen. Ook heb ik een notfound pagina gemaakt. Verders heb ik nog het een en ander aangepast aan mijn css en de pagina in het engels gemaakt. Dinsdag ga ik op onderzoek uit naar de performance.
+Dinsdag heb ik een semi skeleton UI gemaakt. Ook heb ik aan mijn lighthouse performance getallen gewerkt. Voor desktop is dit volledig gelukt, alleen voor mobiel niet helemaal. 
+
+
+## Lighthouse Performance 
+
+![Lighthouse performance](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/lighthouse.jpg?raw=true)
+
+## Skeleton UI
+![Skelelton UI](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/frames.jpg?raw=true)
+
