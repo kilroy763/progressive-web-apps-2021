@@ -32,6 +32,10 @@
         margin-right: 50px;
     }
 
+    #nav a:hover{
+        color: #D04848;
+    }
+
     #nav>a {
         font-size: 19px;
     }
