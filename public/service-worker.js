@@ -1,6 +1,6 @@
 const CORE_CACHE = 1
 const CORE_CACHE_NAME = `core-v${CORE_CACHE}`
-const CORE_ASSETS = ["manifest.json", "/offline", "css/style.css", "img/background.jpg", "img/brbalogo.png", "img/hiding2.png", "img/lost.png"] 
+const CORE_ASSETS = ["manifest.json", "/offline", "css/style.css", "img/background.jpg", "img/brbalogo.png", "img/hiding2.png"] 
 
 
 self.addEventListener('install', (event) => {
