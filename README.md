@@ -74,7 +74,24 @@ De 404 pagina is zichtbaar wanneer de gebruiker zelf de link aanpast, zodra de g
 ## Offline Page
 ![offline page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/connectionLost.jpg?raw=true)
 Source for image: https://www.jamiesale-cartoonist.com/wp-content/uploads/sofa-2-1024x1024.png  
-De offline pagina is zichtbaar door de serviceworker. De offline pagina wordt samen met de afbeelding en het css bestand in de cache geladen van de gebruiker. Hierdoor kan ik zodra de gebruiker geen internet meer heeft de offline pagina tonen. Hierdoor weet de gebruiker dat zijn internet is uitgevallen.
+De offline pagina is zichtbaar door de serviceworker. De offline pagina wordt samen met de afbeelding en het css bestand in de cache geladen van de gebruiker. Hierdoor kan ik zodra de gebruiker geen internet meer heeft de offline pagina tonen. Hierdoor weet de gebruiker dat zijn internet is uitgevallen.  
+
+## Build Script
+Ik heb tijdens een noob sessie met Wouter en Ben gekeken naar build scripts. Hieruit kwam het gebruik van gulp. Na wat uitleg van Wouter was bleek het erg simpel te zijn. Hierom heb ik dit ook toegepast in mijn server. Als je `npm run build:css` typt, verwijdert gulp het originele style.css bestand. Hierna pakt hij alle css bestanden die server side staan en voegt hij die samen geminifyd tot een nieuwe style.css. Die wordt dan weer geplaatst in de public folder.
+
+` 
+const gulp = require('gulp')
+const concat = require('gulp-concat');
+const cleanCSS = require('gulp-clean-css');
+
+return gulp.src([
+    "./src/css/*.css",
+  ])
+    .pipe(concat("style.css"))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest("public/css"))
+`
+
 
 
 ## Reflectie
