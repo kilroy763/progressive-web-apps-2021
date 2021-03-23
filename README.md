@@ -50,34 +50,37 @@ Dinsdag heb ik een begin gemaakt aan build scripts aan de hand van een noobs ses
 Ik ben de maandag verder gegaan met waar ik vorige week gebleven was. Zo heb ik de service worker uitgewerkt met een offline page. Ik had hier problemen mee door een stomme fout. Ik laad namenlijk een achtergrond in via een link en mijn tekst op de pagina is wit. Als je offline bent laad de achtergrond afbeelding niet in doordat die extern is en daardoor wordt de achtergrond wit. Doordat mijn tekst ook wit was, zag ik alleen maar wit en dacht ik dat het niet werkte. Hierdoor was ik een uur hiermee bezig voor niks. Toch heb ik het helemaal werkend gekregen. Ook heb ik een notfound pagina gemaakt. Verders heb ik nog het een en ander aangepast aan mijn css en de pagina in het engels gemaakt. Dinsdag ga ik op onderzoek uit naar de performance.
 Dinsdag heb ik een semi skeleton UI gemaakt. Ook heb ik aan mijn lighthouse performance getallen gewerkt. Voor desktop is dit volledig gelukt, alleen voor mobiel niet helemaal. 
 
+## Optimize the performance 
+Om de perfomance te optimizen heb ik niet expliciet 2 onderwerpen uit gekozen. Ik heb mijn lighthouse gerunt en gekeken naar hoe mijn pagina reageert op slow 3G verbinding. Hierbij was mijn doel om voor de Lighthouse performance alles buiten de SEO op 100% te krijgen. Ook wilde ik een goede ervaring bieden aan de mensen emt trage 3G verbinding
 
 ## Lighthouse Performance 
 ![Lighthouse performance](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/lighthouse.jpg?raw=true)
-Zoals hier boven te zien is, was mijn desktop perforamce al redelijk oke. Ik heb gekeken naar de errors die lighthouse aangaf en heb de code voor de images aangepast. Verders heb ik mijn code nog wat opgeschoond en gekeken naar de snelheden de fetches. Toen ik dit had opgelost was de desktop versie zo goed als perfect. (buiten de SEO om, hier heb ik mijn tijd niet ingestoken omdat dit niet echt een punt van performance is)
-Voor de mobiele versie verliep het niet zo gemakkelijk. Na de aanpassingen van de desktop versie, liep de mobiele versie direct ook beter. Toch kwam ik niet uit 1 foutmelding, namenlijk het volgende : Largest Contentful Paint. Die is bij mij 4.1s op de mobiele variant. Dit komt doordat mijn CSS bestand 2.7kb is volgens de console. Ik kreeg het alleen niet voor elkaar om dit beter te minifyen en heb daarom gekozen om te laten voor wat het is.
+Zoals hier boven te zien is, was mijn desktop performance al redelijk oke. Ik heb gekeken naar de errors die lighthouse aangaf en heb de code voor de images aangepast. Verders heb ik mijn code nog wat opgeschoond en gekeken naar de snelheden de fetches. Toen ik dit had opgelost was de desktop versie zo goed als perfect. (buiten de SEO om, hier heb ik mijn tijd niet ingestoken omdat dit niet echt een punt van performance is)
+Voor de mobiele versie verliep het niet zo gemakkelijk. Na de aanpassingen van de desktop versie, liep de mobiele versie direct ook beter. Toch kwam ik niet uit 1 foutmelding, namenlijk het volgende : Largest Contentful Paint. Die is bij mij 4.1s op de mobiele variant. Dit komt doordat mijn CSS bestand 2.7kb is volgens de console. Ik kreeg het alleen niet voor elkaar om dit beter te minifyen en heb daarom gekozen om te laten voor wat het is.  
 
 
 ## Skeleton UI
 ![Skelelton UI](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/frames.jpg?raw=true)
 Tijdens mijn performance tests heb ik ook een netwerk test gedaan. Zo heb ik mijn pagina laten runnen op slow 3G verbinding. Hierbij kwam ik er direct achter hoe mijn pagina rendert. Eerst zag ik een wit beeld, hierna mijn achtergrond afbeelding. Hierdoor werd mijn tekst ook zichtwaar, die is namenlijk wit. Tot slot werden de gefetchde afbeeldingen getoond. Ik heb hiervoor mijn achtergrond kleur aangepast. Nu is direct mijn tekst te lezen, ook heb ik een placeholder voor de afbeeldingen gemaakt. Hierdoor is een vakje gereserveerd voor de afbeeldingen waar ze komen. Nu heb ik dan ook een render manier waarbij je eerst de tekst ziet met wat basis stijlen, dan mijn achtergrond afbeelding en tot slot de gefetchde afbeeldingen.
+Om het nog beter te krijgen had ik eerst een lage kwaliteit van de afbeeldingen willen fetchen en die in laten laden. Hier had ik alleen geen tijd meer voor en ben ik dus niet aan te gekomen.  
 
 
 ## Overview Page
 ![overview page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/overviewpc.jpg?raw=true)
-Dit is mijn overzichtspagina. Ik heb de stijl overgenomen van mijn WAFS project. 
+Dit is mijn overzichtspagina. Ik heb de stijl overgenomen van mijn WAFS project.  
 
 ## 404 Page
 ![404 page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/404.jpg?raw=true)
 Source for image: https://www.jamiesale-cartoonist.com/wp-content/uploads/hank-2-1024x1024.png  
-De 404 pagina is zichtbaar wanneer de gebruiker zelf de link aanpast, zodra de gebruiker dit doet wordt hij/zij geredirect naar een 404 pagina. Hierbij krijg je direct de optie om terug te gaan naar de home pagina.
+De 404 pagina is zichtbaar wanneer de gebruiker zelf de link aanpast, zodra de gebruiker dit doet wordt hij/zij geredirect naar een 404 pagina. Hierbij krijg je direct de optie om terug te gaan naar de home pagina.  
 
 ## Offline Page
 ![offline page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/connectionLost.jpg?raw=true)
 Source for image: https://www.jamiesale-cartoonist.com/wp-content/uploads/sofa-2-1024x1024.png  
-De offline pagina is zichtbaar door de serviceworker. De offline pagina wordt samen met de afbeelding en het css bestand in de cache geladen van de gebruiker. Hierdoor kan ik zodra de gebruiker geen internet meer heeft de offline pagina tonen. Hierdoor weet de gebruiker dat zijn internet is uitgevallen.  
+De offline pagina is zichtbaar door de serviceworker. De offline pagina wordt samen met de afbeelding en het css bestand in de cache geladen van de gebruiker. Hierdoor kan ik zodra de gebruiker geen internet meer heeft de offline pagina tonen. Hierdoor weet de gebruiker dat zijn internet is uitgevallen.    
 
 ## Build Script
-Ik heb tijdens een noob sessie met Wouter en Ben gekeken naar build scripts. Hieruit kwam het gebruik van gulp. Na wat uitleg van Wouter was bleek het erg simpel te zijn. Hierom heb ik dit ook toegepast in mijn server. Als je `npm run build:css` typt, verwijdert gulp het originele style.css bestand. Hierna pakt hij alle css bestanden die server side staan en voegt hij die samen geminifyd tot een nieuwe style.css. Die wordt dan weer geplaatst in de public folder.
+Ik heb tijdens een noob sessie met Wouter en Ben gekeken naar build scripts. Hieruit kwam het gebruik van gulp. Na wat uitleg van Wouter was bleek het erg simpel te zijn. Hierom heb ik dit ook toegepast in mijn server. Als je `npm run build:css` typt, verwijdert gulp het originele style.css bestand. Hierna pakt hij alle css bestanden die server side staan en voegt hij die samen geminifyd tot een nieuwe style.css. Die wordt dan weer geplaatst in de public folder.   
 
 ```
 const gulp = require('gulp')
