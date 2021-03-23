@@ -79,7 +79,7 @@ De offline pagina is zichtbaar door de serviceworker. De offline pagina wordt sa
 ## Build Script
 Ik heb tijdens een noob sessie met Wouter en Ben gekeken naar build scripts. Hieruit kwam het gebruik van gulp. Na wat uitleg van Wouter was bleek het erg simpel te zijn. Hierom heb ik dit ook toegepast in mijn server. Als je `npm run build:css` typt, verwijdert gulp het originele style.css bestand. Hierna pakt hij alle css bestanden die server side staan en voegt hij die samen geminifyd tot een nieuwe style.css. Die wordt dan weer geplaatst in de public folder.
 
-` 
+```
 const gulp = require('gulp')
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
@@ -90,8 +90,8 @@ return gulp.src([
     .pipe(concat("style.css"))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest("public/css"))
-`
-
+```
+De code hierboven is mijn buildscript. Hierin zeg ik dat alle code uit src/css/ gepakt moet worden. Concat verwijderd mijn huidige style.css bestand. CleanCSS zorgt ervoor dat de nieuwe samengevoegde code geminifyd wordt en op 1 regel staat en door gulp.dest wordt het in de public css folder geplaatst als style.css
 
 
 ## Reflectie
