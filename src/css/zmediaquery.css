@@ -22,8 +22,10 @@
         font-size: 0.75em;
         background-color: #026635;
         text-align: center;
-        height: 2.5em;
+        height: 3em;
         margin-bottom: 4em;
+        width: 100vw;
+        position: fixed;
     }
 
     #breakingbadNav{
@@ -41,5 +43,13 @@
     
     h1{
         font-size: 2.5em;
+    }
+
+    .serienaam{
+        padding-top: 1em;
+    }
+
+    .seizoen{
+        padding-top: 2em;
     }
   }
