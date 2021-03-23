@@ -1,8 +1,8 @@
 # Progressive Web Apps @cmda-minor-web · 20-21
 In dit vak heb ik mijn Breaking Bad overzichtspagina van Web App From Scratch omgebouwd tot een server side rendered applidatie. Ik heb ook een manifest.json en serviceworker toegevoegd. Verders heb ik de applicatie nog geoptimaliseerd.
-\
+
 ## Live Demo
-https://progressivewebappmaxmulder.\herokuapp.com/
+https://progressivewebappmaxmulder.\herokuapp.com
 
 ## Plan Van Aanpak
 Voor Web App From Scratch heb ik een breaking bad/better call saul website gemaakt. Op de website zie je als overzichtspagina de beiden serie's hun seizoenen. Je kan filteren tussen de specifieke series. Ook kan je op een seizoen klikken om de afleveringen te zien. Ik ga hiervoor eerst de routes aanpassen met Express.
@@ -42,12 +42,12 @@ Dit is mijn overzichtspagina. Ik heb de stijl overgenomen van mijn WAFS project.
 
 ## 404 Page
 ![404 page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/404.jpg?raw=true)
-Source for image: https://www.jamiesale-cartoonist.com/wp-content/uploads/hank-2-1024x1024.png
+Source for image: https://www.jamiesale-cartoonist.com/wp-content/uploads/hank-2-1024x1024.png  
 De 404 pagina is zichtbaar wanneer de gebruiker zelf de link aanpast, zodra de gebruiker dit doet wordt hij/zij geredirect naar een 404 pagina. Hierbij krijg je direct de optie om terug te gaan naar de home pagina.
 
 ## Offline Page
 ![offline page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/connectionLost.jpg?raw=true)
-Source for image: https://www.jamiesale-cartoonist.com/wp-content/uploads/sofa-2-1024x1024.png
+Source for image: https://www.jamiesale-cartoonist.com/wp-content/uploads/sofa-2-1024x1024.png  
 De offline pagina is zichtbaar door de serviceworker. De offline pagina wordt samen met de afbeelding en het css bestand in de cache geladen van de gebruiker. Hierdoor kan ik zodra de gebruiker geen internet meer heeft de offline pagina tonen. Hierdoor weet de gebruiker dat zijn internet is uitgevallen.
 
 
