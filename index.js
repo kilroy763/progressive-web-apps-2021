@@ -39,12 +39,14 @@ app.get('/bettercallsaul/season/:season_number', render.seasonSaul)
 app.get('/offline', function(req, res) {
 	// Send a plain string using res.send();
 	res.render('offline', {
+		pageTitle: "Offline"
 	})
 });
 
 app.get('*', function(req, res) {
 	// Send a plain string using res.send();
 	res.render('notfound', {
+		pageTitle: "Page Not Found"
 	})
 });
 
