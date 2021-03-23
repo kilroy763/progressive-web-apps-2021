@@ -13,9 +13,6 @@ img {
 
 img{
     box-shadow: 0 4px 10px 0 rgba(33, 33, 33, 0.15);
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
     background-color: rgba(0,0,0,0.4);
 }
 

@@ -59,12 +59,16 @@ h2 {
     max-width: 500px;
     margin-top: 2em;
     margin-bottom: 2em;
+    background: none;
+    box-shadow: none;
 }
 
 .hank{
     display: block;
     margin: 0 auto;
     max-width: 300px;
+    background: none;
+    box-shadow: none;
 }
 
 .lostlink{
