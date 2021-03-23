@@ -20,6 +20,16 @@ Run het bestand
   $ npm run start
   ```
   
+ ## Welke API met wat voor data  heb ik gebruikt?
+Ik heb "The Movie DB" gebruikt voor dit project. Hierdoor heb ik toegang tot informatie over allemaal films en series. De API bevat veel data, ik gebruik hier niet alles van. De Data elementen die ik gebruik zijn de volgende:
+- `poster_path`: Dit is de poster van het seizoen
+- `overview`: Dit is een korte uitleg waar de serie over gaat
+- `name`: Dit is de naam van de serie
+- `vote_average`: Dit is het gemiddelde cijfer dat de serie krijgt
+- `seasons`: Dit is het getal van het seizoen
+- `air_date`: Dit is de datum van wanneer het seizoen te zien was
+- `episodes`: Hier is alle informatie over een aflevering te vinden  
+  
 ## Plan Van Aanpak
 Voor Web App From Scratch heb ik een breaking bad/better call saul website gemaakt. Op de website zie je als overzichtspagina de beiden serie's hun seizoenen. Je kan filteren tussen de specifieke series. Ook kan je op een seizoen klikken om de afleveringen te zien. Ik ga hiervoor eerst de routes aanpassen met Express.
 
