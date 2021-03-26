@@ -1,6 +1,9 @@
 # Progressive Web Apps @cmda-minor-web · 20-21
 In dit vak heb ik mijn Breaking Bad overzichtspagina van Web App From Scratch omgebouwd tot een server side rendered applidatie. Ik heb ook een manifest.json en serviceworker toegevoegd. Verders heb ik de applicatie nog geoptimaliseerd.
 
+## De App
+![overview page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/overviewpc.jpg?raw=true)
+
 ## Live Demo
 https://progressivewebappmaxmulder.herokuapp.com
 
@@ -29,10 +32,28 @@ Ik heb "The Movie DB" gebruikt voor dit project. Hierdoor heb ik toegang tot inf
 - `seasons`: Dit is het getal van het seizoen
 - `air_date`: Dit is de datum van wanneer het seizoen te zien was
 - `episodes`: Hier is alle informatie over een aflevering te vinden  
-  
+
+## Folder structuur
+### index.js
+Dit start mijn Progressive Web App
+
+### Modules
+Hier staan mijn fetch en render modules in, die worden aangesproken in mijn index.js
+
+### Views
+Hier staan mijn pagina's in, gemaakt met een templating engine genaamd EJS. Ik heb de hergebruikte elementen geplaatst in de /partials folder. 
+
+### SRC
+Hier staat al mijn CSS in, ik heb die opgesplitst. Via een build script worden alle css bestanden samengevoegd en in de public folder geplaatst.
+
+### Script
+Hier staat de code voor mijn build script.
+
+### Public
+Hier staan al mijn elementen die nodig zijn voor de HTML die gerenderd wordt. Zo wordt in de CSS de gebuilde CSS geplaatst.
+
 ## Plan Van Aanpak
 Voor Web App From Scratch heb ik een breaking bad/better call saul website gemaakt. Op de website zie je als overzichtspagina de beiden serie's hun seizoenen. Je kan filteren tussen de specifieke series. Ook kan je op een seizoen klikken om de afleveringen te zien. Ik ga hiervoor eerst de routes aanpassen met Express.
-
 
 # Mijn process
 
