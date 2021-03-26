@@ -1,4 +1,4 @@
-// Require third-party modules
+// Third party modules
 const express = require('express');
 const request = require('request');
 var path = require('path')
@@ -6,45 +6,43 @@ const fetch = require('node-fetch')
 const render = require('./modules/render.js')
 
 
-// Config object
+//  De poort voor localhost
 const port = 3000;
 
-// Create new express app in 'app'
+// Maak nieuwe express app
 const app = express();
 
-// Link the templating engine to the express app
+// link de templating engine aan express
 app.set('view engine', 'ejs');
 
-// Tell the views engine/ejs where the template files are stored (Settingname, value)
+// Aan express laten weten waar de templates staan
 app.set('views', 'views');
 
-// Tell express to use a 'static' folder
-// If the url matches a file it will send that file
-// Sending something (responding) ends the response cycle
+// Express laten weten dat er gebruik wordt gemaakt van een statisch folder
 app.use(express.static(path.join(__dirname, '/public')));
 
+// Als de route "/" is dan moet de site geredirect worden naar "/breakingbad"
 app.get('/', redirect)
 
 function redirect(req, res) {
-    res.redirect('/breakingbad');
+	res.redirect('/breakingbad');
 }
 
-
+// aangeven op welke routes welke paginas worden gerenderd
 app.get('/breakingbad', render.BrBa);
 app.get('/breakingbad/season/:season_number', render.seasonBrBa)
-
 app.get('/bettercallsaul', render.Saul);
 app.get('/bettercallsaul/season/:season_number', render.seasonSaul)
 
-app.get('/offline', function(req, res) {
-	// Send a plain string using res.send();
+// offline pagina creeren
+app.get('/offline', function (req, res) {
 	res.render('offline', {
 		pageTitle: "Offline"
 	})
 });
 
-app.get('*', function(req, res) {
-	// Send a plain string using res.send();
+// als een niet gedefineerde route wordt opgegeven, toon dan de notfound page
+app.get('*', function (req, res) {
 	res.render('notfound', {
 		pageTitle: "Page Not Found"
 	})
@@ -54,9 +52,8 @@ app.get('*', function(req, res) {
 
 
 
-// Actually set up the server
-app.listen(process.env.PORT || port, function() {
-    console.log(`Application started on port: ${port}`);
-    console.log(`Application is visible on: http://localhost:${port}`);
+// server set up
+app.listen(process.env.PORT || port, function () {
+	console.log(`Application started on port: ${port}`);
+	console.log(`Application is visible on: http://localhost:${port}`);
 });
-

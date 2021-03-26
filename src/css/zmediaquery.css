@@ -1,16 +1,15 @@
-
 @media only screen and (max-width: 800px) {
 
-    section{
+    section {
         display: block;
     }
 
-    img{
+    img {
         width: 75%;
         min-width: 200px;
     }
 
-    .seasonlink{
+    .seasonlink {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -18,7 +17,8 @@
         text-align: center;
         padding: 2.5em;
     }
-    #nav{
+
+    #nav {
         font-size: 0.75em;
         background-color: #026635;
         text-align: center;
@@ -28,11 +28,11 @@
         position: fixed;
     }
 
-    #breakingbadNav{
+    #breakingbadNav {
         margin-right: 50px;
     }
 
-    #nav a:hover{
+    #nav a:hover {
         color: #D04848;
     }
 
@@ -40,20 +40,20 @@
         font-size: 19px;
     }
 
-    table:nth-child(even){
+    table:nth-child(even) {
         width: 85%;
         max-width: 450px;
     }
-    
-    h1{
+
+    h1 {
         font-size: 2.5em;
     }
 
-    .serienaam{
+    .serienaam {
         padding-top: 1em;
     }
 
-    .seizoen{
+    .seizoen {
         padding-top: 2em;
     }
-  }
+}

@@ -1,4 +1,4 @@
-.episode{
+.episode {
     display: block;
     border-radius: 50px;
     width: 100%;
@@ -6,7 +6,7 @@
     margin-top: 0;
 }
 
-.titel{
+.titel {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -14,7 +14,7 @@
     margin-bottom: 1em;
 }
 
-table{
+table {
     width: 100vw;
 }
 
@@ -26,16 +26,16 @@ th {
     width: 100vw;
 }
 
-td{
+td {
     width: 100vw;
 }
 
-table:nth-child(even){
+table:nth-child(even) {
     background-color: white;
     width: 50%;
     margin: 0 auto;
     border-radius: 50px;
-    box-shadow: 0px 14px 48px 6px rgba(0,0,0,1);
+    box-shadow: 0px 14px 48px 6px rgba(0, 0, 0, 1);
     margin-bottom: 10em;
 }
 
@@ -71,6 +71,6 @@ article a {
     text-decoration: none;
 }
 
-td > a {
+td>a {
     color: black;
 }

@@ -1,19 +1,19 @@
-#nav{
+#nav {
     font-size: 1.5em;
 }
 
-#nav a:hover{
+#nav a:hover {
     color: #026635;
 }
 
-#nav > a{
+#nav>a {
     font-size: 24px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-#breakingbadNav{
+#breakingbadNav {
     margin-right: 150px;
 }
