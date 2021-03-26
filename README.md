@@ -66,7 +66,7 @@ Om het nog beter te krijgen had ik eerst een lage kwaliteit van de afbeeldingen 
 
 
 ## Overview Page
-![overview page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/overviewpc.jpg?raw=true)
+![overview page](https://github.com/kilroy763/progressive-web-apps-2021/blob/master/documentatie/overviewpc.jpg?raw=true =250x)
 Dit is mijn overzichtspagina. Ik heb de stijl overgenomen van mijn WAFS project.  
 
 ## 404 Page
